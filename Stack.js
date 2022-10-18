@@ -1,39 +1,38 @@
 class Stack{
-    constructor(){
+
+    constructor() {
         this.stack = [];
     }
 
-    push(val){
+    push(val) {
         this.stack.push(val);
     }
 
-    pop(){
+    pop() {
         if (this.stack.length > 0){
             return this.stack.pop();
-        }else{
+        } else {
             throw "Stack Underflow";
         }
-        
     }
 
-    peek(){
-        if (this.stack.length > 0){
+    peek() {
+        if (this.stack.length > 0) {
             return this.stack[this.stack.length - 1];
-        }else{
+        } else {
             throw "Stack Underflow";
         }
-        
     }
 
-    isEmpty(){
+    isEmpty() {
         return this.stack.length == 0;
     }
 
-    size(){
+    size() {
         return this.stack.length;
     }
 
-    print(){
+    print() {
         console.log(this.stack);
     }
 }
